@@ -1,4 +1,4 @@
-import styles from './customers.module.css';
+import styles from '../customers/customers.module.css';
 
 
 const Customers = () => {

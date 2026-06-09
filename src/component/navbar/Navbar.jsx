@@ -10,23 +10,29 @@ const Navbar = () => {
         <div className={`${styles.headerContents} container`}>
           <div className={styles.logom}>
             <img src={logom} alt="Client 7" />
-            <h2>Nexcent</h2>
+            <h2 className={styles.companyname}>Nexcent</h2>
           </div>
 <nav>
             {navBardata.map((item) => (
               <a className={styles.nav} key={item.id}>
-                {item.pathName}
+                {item.pathName} 
               </a>
             ))}
           </nav>
           
 
-          <div className={styles.reg}>
+         
+          <div  className={styles.loginReg}>
+              <button className={styles.login}>
+              <a href="">Login</a>
+            </button>
+             <div className={styles.reg}>
             <button>
               <a href="">Register Now</a>
             </button>
           </div>
         </div>
+          </div>
       </section>
     </header>
   );

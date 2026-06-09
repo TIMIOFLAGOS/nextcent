@@ -1,5 +1,11 @@
 .communitySection {
   margin-top: 3rem;
+
+}
+.community{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 }
 .communityContents {
   display: flex;
@@ -13,13 +19,7 @@
   align-items: center;
   gap: 7px;
 }
-.communityCardsAll {
-  display: flex;
-  flex-direction: row;
- align-items: center;
- justify-content: center;
-  gap: 9rem;
-}
+
 .communityTitle h2 {
   width: 542px;
   font-weight: 600;
@@ -37,48 +37,13 @@
 
   text-align: center;
 }
-.communitySectionCards {
+
+
+
+.communityCardsAll {
   display: flex;
-  align-items: center;
-  gap: 5rem;
-  
-}
-.communityCard {
-  display: flex;
-  height: 250px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  padding: 1rem;
-  width: 300px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-.communityCardHead {
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-}
-.communityCardHead img {
-  width: 65px;
-}
-.communityCardHead h2 {
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 36px;
-  letter-spacing: 0%;
-  color: #717171;
-  text-align: center;
-  
-}
-.communityCard p {
-  width: 251px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0%;
-  color: #717171;
-  text-align: center;
+  flex-direction: row;
+ align-items: center;
+ justify-content: center;
+  gap: 9rem;
 }

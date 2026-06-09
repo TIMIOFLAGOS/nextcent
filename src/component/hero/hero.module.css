@@ -15,10 +15,11 @@
 .heroLeftTitle {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 17px;
 }
 .heroLeftTitle h2 {
   font-weight: 600;
+  color: rgb(56, 55, 55);
   font-size: 55px;
   line-height: 50px;
   letter-spacing: 0%;
@@ -32,10 +33,11 @@
 }
 .heroLeftTitle p {
   font-weight: 400;
-  font-size: 19px;
+  font-size: 15px;
   line-height: 24px;
   letter-spacing: 0%;
   color: #717171;
+  width: 500px;
 }
 .heroLeftBtn {
   padding: 10px 20px 10px 20px;

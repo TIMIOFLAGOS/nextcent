@@ -1,8 +1,8 @@
-import { memo } from "react";
+
 import style from "./communityupdate.module.css";
-import img1 from "../../assets/community-update-img-1.png";
-import img2 from "../../assets/community-update-img-2.png";
-import img3 from "../../assets/community-update-img-3.png";
+import Cucard from "../cucard/cucard.jsx";
+import { communityData } from "../../component/data.js";
+
 
 const Communityupdate = () => {
   return (
@@ -20,35 +20,18 @@ const Communityupdate = () => {
         </p>
       </div>
 
-      <div className={style.cards}>
-        <div className={style.card}>
-          <img src={img1} alt="" />
-          <div className={style.content}>
-            <h3>Creating Streamlined Safeguarding Processes with OneRen</h3>
-
-            <a href="#">Readmore →</a>
-          </div>
-        </div>
-
-        <div className={style.card}>
-          <img src={img2} alt="" />
-          <div className={style.content}>
-            <h3>What are your safeguarding responsibilities and how can you manage them?</h3>
-
-            <a href="#">Readmore →</a>
-          </div>
-        </div>
-        <div className={style.card}>
-          <img src={img3} alt="" />
-          <div className={style.content}>
-            <h3>Revamping the Membership Model with Triathlon Australia</h3>
-
-            <a href="#">Readmore →</a>
-          </div>
-        </div>
+      <div className={style.card}>
+        {communityData.map((item) => (
+          <Cucard
+            key={item.id}
+            imgSrc={item.imgSrc}
+            title={item.title}
+            desc={item.desc}
+          />
+        ))}
       </div>
     </div>
   );
 };
 
-export default memo(Communityupdate);
+export default (Communityupdate);
